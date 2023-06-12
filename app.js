@@ -25,6 +25,11 @@ app.use((req, res, next) => {
     next();
 });
 
+app.use((req, res, next) => {
+  res.end('Fish-eye server !');
+  next();
+})
+
 app.use(bodyParser.json());
 
 app.use('/api/photos', photoRoutes);
