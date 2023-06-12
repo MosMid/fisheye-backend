@@ -26,7 +26,7 @@ app.use((req, res, next) => {
 });
 
 app.use((req, res, next) => {
-  res.end('Fish-eye server !');
+  res.end('Fish-eye server rocks !');
   next();
 })
 
