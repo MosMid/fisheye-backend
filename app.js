@@ -8,8 +8,8 @@ const likeRoutes = require('./routes/Likes');
 const path = require('path');
 
 async function connect(){
-    //await mongoose.connect('mongodb://localhost/cluster1',
-    await mongoose.connect('mongodb+srv://mehoody:guemmoun@fisheye.ftrugor.mongodb.net/?retryWrites=true&w=majority',
+    await mongoose.connect('mongodb://localhost/cluster1',
+    //await mongoose.connect('mongodb+srv://mehoody:guemmoun@fisheye.ftrugor.mongodb.net/?retryWrites=true&w=majority',
     { useNewUrlParser: true,
       useUnifiedTopology: true })
     .then(() => console.log('Connexion à MongoDB réussie !'))

@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const profilSchema = mongoose.Schema({
-    id: { type: String, required: true},
+    //id: { type: String, required: true},
     fullName: { type: String, required: true },
     country: { type: String, required: true },
     city: { type: String, required: true },
