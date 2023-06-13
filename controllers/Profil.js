@@ -67,5 +67,5 @@ exports.getAllProfils = (req, res) => {
 exports.getProfil = (req, res) => {
     Profil.findOne({ photographer: req.params.id})
     .then(profil => res.status(200).json(profil))
-    .catch(error => res.status(900).json({error}));
+    .catch(error => res.status(400).json({error}));
 }
