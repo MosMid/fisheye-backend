@@ -12,7 +12,7 @@ router.get('/:id', photoCtrl.getPhotos)
 
 router.put('/:id', auth, photoCtrl.editPhoto)
 
-router.delete('/:id', photoCtrl.deletePhoto)
+router.delete('/:id', auth, photoCtrl.deletePhoto)
 
 router.delete('/deleteAll', photoCtrl.deletePhotos)
 
