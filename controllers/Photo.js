@@ -66,8 +66,8 @@ exports.getOnePhoto = (req, res) => {
 
 exports.getPhotos = (req, res) => {
     // {photographer: "646b3d1f73afba29c2c0bc30"}
-    Photo.find({photographer: req.params.id}, {file: 0})
-    //Photo.find({photographer: req.params.id})
+    //Photo.find({photographer: req.params.id}, {file: 0})
+    Photo.find({photographer: req.params.id})
     .then(photo => res.status(200).json(photo))
     .then(photo => console.log(photo))
     .catch(error => res.status(400).json({error}));
